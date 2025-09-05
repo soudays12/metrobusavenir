@@ -1,0 +1,42 @@
+
+.navigation .ul-men{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    padding: 0pX;
+	background-color: rgb(181, 213, 231);
+}
+.navigation .ul-men .li-men{
+    width: 80%;
+    display: inline-block;
+    text-align: -webkit-match-parent;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.navigation .ul-men a{
+    font-size: 23px;
+    font-family: calibri;
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(0, 150, 236);
+    font-weight: bold;
+}
+
+
+.navigation .ul-men li:hover{
+    background-color: rgba(9, 121, 155, 0.842);
+    color: white;
+    cursor: pointer;
+}
+.navigation .ul-men li a:hover{
+    color: white;
+}
+
+
+

@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ page import="jakarta.servlet.*" %>
+ <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/authentification.css">
+    <title>Document</title>
+</head>
+<body>
+	<% 
+            	if(session.getAttribute("reussi") !=null){ 
+		    	//s'il y a succes
+		    	System.out.println("Message obtenu : "+session.getAttribute("reussi"));
+		        %>
+				<div class="reussi">
+		            <i class="fas fa-attention"></i>
+					<p><%= session.getAttribute("reussi") %></p>
+					<i>
+				</div>
+				<% session.removeAttribute("reussi"); %>
+			<%}else if(session.getAttribute("erreur") !=null){
+				//s'il y a erreur
+				System.out.println("Message obtenu : "+session.getAttribute("erreur"));
+				 %>
+					<div class="erreur">
+			            <i class="fas fa-attention"></i>
+						<p><%= session.getAttribute("erreur") %></p>
+						<i>
+					</div>
+					<% session.removeAttribute("erreur"); %>
+				<% 
+				}
+			%>
+			
+    <form action="../inscription" method="POST">
+        <h1 align="center">Inscrivez-vous</h1>
+        <div class="flex">
+            <div class="marg">
+                <h3>Noms :</h3>
+                <input type="text" name ="nom" class="text_nom" placeholder="Noms" required>
+            </div>
+            <div class="marg-left">
+                <h3>Prenoms :</h3>
+                <input type="text" name ="prenom" placeholder="Prenoms" equired>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="marg">
+                <h3>Date de naissance :</h3>
+                <input type="date" name ="date_naissance" class="age" required>
+            </div>
+            <div class="marg-left">
+                <h3>Genre :</h3>
+                <select name="genre" id="" required>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <h3>Email :</h3>
+            <input type="mailto" name="email" class="email" placeholder="compte@gmail.com" required>
+        </div>
+
+        <div class="flex">
+            <div class="marg">
+                <h3>Mot de passe :</h3>
+                <input type="password" name ="mdp" required>
+            </div>
+            <div class="marg-left">
+                <h3>Confirmez !</h3>
+                <input type="password" name ="conf_mdp" required>
+            </div>
+        </div>
+        
+        <br><br><br>
+       
+		<center>
+        	<input align="center" type="submit" value="Je m'inscris" name ="enregistrer" class="inscription">
+        </center>
+        
+        <h5 align="center">Vous avez deja un compte ?<a href="login.jsp">Connectez-vous</a></h5>
+        <h5 align="center">Copyright Soudays&copy; 2024</h5>
+    </form>
+</body>
+</html>
+

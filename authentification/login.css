@@ -1,0 +1,78 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use the modern font */
+    background-color: rgba(212, 232, 240, 0.8); /* Adjusted opacity */
+    background-image: url('covoiturage.png'); /* Your image URL */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    background-color: white;
+    padding: 50px;
+    border: 2px solid #c8cdd1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.textForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameText,
+.passwordText {
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 3px;
+    background: #f2f3f5;
+    border: 1px solid #c8cdd1;
+    font-size: 16px; /* Increased font size */
+}
+
+.nameText:focus,
+.passwordText:focus {
+    border-color: #2e8dec;
+    outline: none;
+}
+
+.rememberContainer {
+    margin-bottom: 20px;
+}
+
+.btnLogin {
+    background-image: linear-gradient(to bottom, #2e8dec, #196dc0);
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 3px #bfbfc0;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    font-weight: bold; /* Bold text for button */
+}
+.btnLogin.active {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-image: linear-gradient(to bottom, #bacada, #93a1ae);
+}
+.btnLogin:hover {
+    background-image: linear-gradient(to bottom, #196dc0, #2e8dec);
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%; /* Make form wider on smaller screens */
+        padding: 30px; /* Adjust padding */
+    }
+}

@@ -1,0 +1,98 @@
+footer{
+    width: auto;
+    height: auto;
+    background-color: #2c374e;
+    border: none;
+    margin: 0px;
+}
+
+footer ul {
+    color: #fff;
+}
+footer ul h1{
+    font-size: 24px;
+}
+footer ul li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: calibri;
+    color: rgb(185, 185, 185);
+    font-size: 20px;
+}
+footer ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.grid-container-footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 15px;
+}
+.options{
+	
+}
+.option1{
+	
+}
+.copyright{
+}
+
+
+
+
+
+
+
+
+
+.div-social{
+	height: 50px;
+}
+
+.div-social i{
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.avant_pied{
+    background: linear-gradient(to top ,rgba(31, 46, 66, 0.786)100%,rgba(33, 47, 71, 0.688)100%), url(../images/avenir\ voyage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+}
+footer div .h1-pied{
+    color: aliceblue;
+}
+footer div button{
+    background-color: #ffea00;
+    color: rgb(255, 255, 255);
+    font-size: 1pc;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+}
+footer div button i{
+    color: #ffffff;
+}
+footer div button:hover{
+    background-color: #ffea00;
+    box-shadow:  5px 5px 5px #ffbf00;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.div-avant_pied{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

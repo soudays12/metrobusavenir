@@ -1,0 +1,125 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Styles pour la section "infos_voyage" */
+.infos_voyage {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.messag {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Styles pour la section "flex" */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.depart, .destination {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+}
+
+.depart_label, .destination_label {
+    background-color: #004a8f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+
+.depart h3, .destination h3 {
+    margin: 0;
+    color: #004a8f;
+}
+
+/* Styles pour la section "Donnee" */
+.Donnee {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.donne_uniq {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.left {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.right {
+    color: #007bff;
+}
+
+/* Styles pour le bouton "Reserver un Billet" */
+.btn_reserver_voyage {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn_reserver_voyage:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section "agence" */
+.agence {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.agence h2 {
+    color: #001c33;
+    margin-top: 0;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 767px) {
+    .infos_voyage, .agence {
+        margin: 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .depart, .destination {
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+}

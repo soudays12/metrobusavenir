@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style ordinaire -->
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/voyage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css" />
+
+    <!-- responsivité des ecrans : PC - TABLETTES - ANDROID -->
+    <link rel="stylesheet" type="text/css" href="assets/css/pc.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tablettes.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/android.css" />
+    <!-- animation javascript -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
+    <style>
+        #navigation #nav-bar #liste_menu #li-nav1 {
+            border-bottom: 3px solid #ffffff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .navigation .ul-nav li#li-nav1 a {
+            color: #1d4ed8;
+            cursor: pointer;
+        }
+        a input[type="button"]:hover {
+            cursor: pointer;
+            lighting-color: rgb(241, 241, 241);
+        }
+    </style>
+
+    <title>Metrobus - Accueil</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="tout_header header-container">
+            <h1 class="nom_site header-title fade-in" id="nom_site">
+                <img src="assets/images/default.jpg" alt="" class="img-logo">
+                AVENIR VOYAGES
+            </h1>
+            <div class="recherche_form search-form fade-in" id="recherche_form">
+                <div class="recherche">
+                    <input class="search_input" id="search_input" type="text" />
+                    <i class="fas fa-search" id="fa-search"></i>
+                </div>
+            </div>
+            <div class="user-activity slide-in">
+                <div class="notif">
+                    <span class="nb-notif">5</span>
+                    <i class="fas fa-bell fa-bell-header"></i>
+                </div>
+                <span>
+                    <i class="fas fa-user fa-user-header"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Section d'accueil -->
+    <div class="containerPresentation">
+        <div id="navigation" class="form_navigation">
+            <div id="nav-bar" class="nav-bar slide-in">
+                <ul id="liste_menu" class="fade-in">
+                    <a href="index.jsp">
+                        <li class="li_nav" id="li-nav1">
+                            <i class="fas fa-home"></i> accueil
+                        </li>
+                    </a>
+                    <a href="voyages.jsp">
+                        <li class="li_nav" id="li-nav2">
+                            <i class="fas fa-road"></i> réservation
+                        </li>
+                    </a>
+                    <a href="destinataire.jsp">
+                        <li class="li_nav" id="li-nav4">
+                            <i class="fas fa-message"></i> tchats
+                        </li>
+                    </a>
+                    <a href="apropos.jsp">
+                        <li class="li_nav" id="li-nav5">
+                            <i class="fas fa-about"></i> à propos
+                        </li>
+                    </a>
+                    <a href="apropos.jsp">
+                        <li class="li_nav" id="li-nav5">
+                            <i class="fas fa-about"></i> contacts
+                        </li>
+                    </a>
+                </ul>
+
+                <div id="user-nav" class="user-nav zoom-in">
+                    <a href="authentification/inscription.jsp">
+                        <input id="inscription" type="button" value="s'inscrire" />
+                    </a>
+                    <a href="login.jsp">
+                        <input id="connexion" type="button" value="se connecter" />
+                    </a>
+                </div>
+            </div>
+
+            <button id="menu" aria-label="toggle curtain navigation" class="menu fade-in">
+                <span class="line_l1"></span>
+                <span class="line_l2"></span>
+                <span class="line_l3"></span>
+            </button>
+        </div>
+        <div class="presentationSection fade-in">
+            <div class="paragraph">
+                <p class="firstParagraph fade-in">
+                    BIENVENUE SUR LA MEILLEURE PLATEFORME DE RESERVATION DE BILLET
+                    <span class="couleur-logo">
+                        <strong>METROBUS</strong>
+                    </span>
+                </p>
+                <p class="second-parag fade-in">
+                    voyagez plus vite, plus sur et plus confortablement avec METROBUS
+                </p>
+                <div class="social">
+                    <a href="#titre-voyages">
+                        <input type="button" value="Reserver un billet" class="btn-action zoom-in" />
+                    </a>
+                    <a href="#containerPopular">
+                        <button class="btn-discover zoom-in" value="Dévouvrir nos destinations">
+                            Dévouvrir nos destinations
+                            <i class="fas fa fa-arrow-circle-down"></i>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+            <!-- <img class="thumbnail" src="assets/images/bus21.jpg" alt="Image landing page"> -->
+        </div>
+    </div>
+
+
+    <!-- qui sommes nous -->
+    <div class="containerAboutUs fade-in">
+        <div class="aboutUs-containt-container">
+            <div class="head-aboutUs">
+                <h1 class="zoom-in">Qui sommes-nous ?</h1>
+                <p class="fade-in">
+                    Nous sommes une entreprise de développement logiciel web et mobile basée
+                    au Cameroun. Créée en 2019.
+                </p>
+            </div>
+            <div class="stats fade-in">
+                <div class="stat-item zoom-in">
+                    <h2>8/10</h2>
+                    <p>Satisfaction client</p>
+                </div>
+                <div class="stat-item zoom-in">
+                    <h2>70+</h2>
+                    <p>De clients nous font confiance</p>
+                </div>
+                <div class="stat-item zoom-in">
+                    <h2>20%</h2>
+                    <p>De voyages effectués depuis l'ouverture</p>
+                </div>
+            </div>
+            <button class="cta-button slide-in">Notre histoire</button>
+        </div>
+    </div>
+    <!-- qui sommes nous -->
+
+
+    <!-- endroits populaires -->
+    <div id="containerPopular" class="containerPopular fade-in">
+
+        <div class="content-container-popular">
+            <div class="labelDestinations zoom-in">
+                <h2>Endroits populaires</h2>
+                <p>Découvrez nos différentes destinations</p>
+            </div>
+
+            <div class="container-destinations grid-container-destinations fade-in">
+                <div class="destination-card zoom-in">
+                    <img src="assets/images/DOUALA.jpg" alt="Douala" class="destination-image" />
+                    <h3>Douala</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="star">⭐</span>
+                </div>
+                <div class="destination-card zoom-in">
+                    <img src="assets/images/BAFOUSSAM.jpg" alt="Bafoussam" class="destination-image" />
+                    <h3>Bafoussam</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="star">⭐</span>
+                </div>
+                <div class="destination-card zoom-in">
+                    <img src="assets/images/YAOUNDE.jpg" alt="Yaoundé" class="destination-image" />
+                    <h3>Yaoundé</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- endroits populaires -->
+
+
+    <!-- Indication de paiements -->
+    <div class="moyens_paiement fade-in">
+        <div class="sect1 zoom-in">
+            <p class="paymentLabel">
+                Chez METROBus, vous avez la possibilité de réserver vos billets en
+                payant par deux moyens.
+            </p>
+            <p class="paymentLabelDesc fade-in">
+                Pas la peine de vous inquiéter, les nouveaux moyens de paiement
+                arrivent.
+            </p>
+        </div>
+        <div class="sect2 fade-in">
+            <img class="paymentImg zoom-in" src="assets/images/momo.jpg" alt="Moyen de paiement 1" />
+            <img class="paymentImg zoom-in" src="assets/images/om.png" alt="Moyen de paiement 2" />
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Reservation rapide -->
+    <div id="reservationContainer" class="reservationContainer fade-in">
+        <h3 class="reservationLabel zoom-in">Recherchez rapidement votre trajet</h3>
+        <div class="reservationSearch fade-in">
+            <div class="contentContainer zoom-in">
+                <h3 class="heure">Départ</h3>
+                <select name="" id="">
+                    <option value="">Yaoundé</option>
+                    <option value="">Douala</option>
+                    <option value="">Bafoussam</option>
+                    <option value="">Kribi</option>
+                    <option value="">Bamenda</option>
+                    <option value="">Buéa</option>
+                </select>
+            </div>
+
+            <div class="contentContainer zoom-in">
+                <h3 class="heure">Destination</h3>
+                <select name="" id="">
+                    <option value="">Yaoundé</option>
+                    <option value="">Douala</option>
+                    <option value="">Bafoussam</option>
+                    <option value="">Kribi</option>
+                    <option value="">Bamenda</option>
+                    <option value="">Buéa</option>
+                </select>
+            </div>
+
+            <div class="contentContainer zoom-in">
+                <h3 class="heure">Date</h3>
+                <input type="date" name="" id="" />
+            </div>
+
+            <div class="contentContainer zoom-in">
+                <h3 class="heure">Heure</h3>
+                <select name="" id="">
+                    <option value="06">06h</option>
+                    <option value="07">07</option>
+                    <option value="20">20h</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Rechercher" class="slide-in" />
+    </div>
+
+    <br /><br /><br />
+    <!-- Liste des voyages disponibles -->
+    <div class="voyag_dispo fade-in">
+        <h1 id="titre-voyages" class="titre-voyages zoom-in">Nos des trajets populaires</h1>
+        <div id="grid-container" class="grid-container les_voyages fade-in">
+
+            <!-- Exemple de voyage -->
+            <div class="voyage zoom-in">
+                <div class="infos-voyage">
+                    <div class="road-div">
+                        <div><i class="fas fa-map-marker-alt"></i> Foumban</div>
+                        <div><i class="fas fa-arrow-right"></i> Yaoundé</div>
+                    </div>
+                    <div class="details">
+                        <div class="type-div"><i class="fas fa-bus-alt"></i> Type : VIP</div>
+                        <div class="date-div"><i class="fas fa-calendar-alt"></i> Date : 12 septembre 2025</div>
+                        <div class="moment-div"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i> Moment : Journée</div>
+                        <div class="hour-div"><i class="fas fa-clock"></i> Heure départ : 20:30</div>
+                        <h2 class="prix">
+                            7000 FCFA
+                        </h2>
+                    </div>
+                </div>
+                <div class="reserver">
+                    <a href="">
+                        <input type="button" class="btn-apply" value="Réserver maintenant" />
+                    </a>
+                    <a href="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Exemple de voyage -->
+            <div class="voyage zoom-in">
+                <div class="infos-voyage">
+                    <div class="road-div">
+                        <div><i class="fas fa-map-marker-alt"></i> Foumban</div>
+                        <div><i class="fas fa-arrow-right"></i> Yaoundé</div>
+                    </div>
+                    <div class="details">
+                        <div class="type-div"><i class="fas fa-bus-alt"></i> Type : VIP</div>
+                        <div class="date-div"><i class="fas fa-calendar-alt"></i> Date : 12 septembre 2025</div>
+                        <div class="moment-div"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i> Moment : Journée</div>
+                        <div class="hour-div"><i class="fas fa-clock"></i> Heure départ : 20:30</div>
+                        <h2 class="prix">
+                            7000 FCFA
+                        </h2>
+                    </div>
+                </div>
+                <div class="reserver">
+                    <a href="">
+                        <input type="button" class="btn-apply" value="Réserver maintenant" />
+                    </a>
+                    <a href="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Exemple de voyage -->
+            <div class="voyage zoom-in">
+                <div class="infos-voyage">
+                    <div class="road-div">
+                        <div><i class="fas fa-map-marker-alt"></i> Foumban</div>
+                        <div><i class="fas fa-arrow-right"></i> Yaoundé</div>
+                    </div>
+                    <div class="details">
+                        <div class="type-div"><i class="fas fa-bus-alt"></i> Type : VIP</div>
+                        <div class="date-div"><i class="fas fa-calendar-alt"></i> Date : 12 septembre 2025</div>
+                        <div class="moment-div"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i> Moment : Journée</div>
+                        <div class="hour-div"><i class="fas fa-clock"></i> Heure départ : 20:30</div>
+                        <h2 class="prix">
+                            7000 FCFA
+                        </h2>
+                    </div>
+                </div>
+                <div class="reserver">
+                    <a href="">
+                        <input type="button" class="btn-apply" value="Réserver maintenant" />
+                    </a>
+                    <a href="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Exemple de voyage -->
+            <div class="voyage zoom-in">
+                <div class="infos-voyage">
+                    <div class="road-div">
+                        <div><i class="fas fa-map-marker-alt"></i> Foumban</div>
+                        <div><i class="fas fa-arrow-right"></i> Yaoundé</div>
+                    </div>
+                    <div class="details">
+                        <div class="type-div"><i class="fas fa-bus-alt"></i> Type : VIP</div>
+                        <div class="date-div"><i class="fas fa-calendar-alt"></i> Date : 12 septembre 2025</div>
+                        <div class="moment-div"><i class="fas fa-sun"></i> <i class="fas fa-moon"></i> Moment : Journée</div>
+                        <div class="hour-div"><i class="fas fa-clock"></i> Heure départ : 20:30</div>
+                        <h2 class="prix">
+                            7000 FCFA
+                        </h2>
+                    </div>
+                </div>
+                <div class="reserver">
+                    <a href="">
+                        <input type="button" class="btn-apply" value="Réserver maintenant" />
+                    </a>
+                    <a href="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <a href="voyages.jsp">
+                <input class="voir_tout slide-in" type="button" value="Voir tout >>" />
+            </a>
+        </center>
+        <br><br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <div class="foot-f1 zoom-in">
+            <div class="avant_pied">
+                <div class="div-avant_pied" align="center">
+                    <br />
+                    <h1 class="h1-pied">Chez AVENIR VOYAGES, vous etes satisfait ou remboursé</h1>
+                    <br />
+                    <button class="bout-footer slide-in">
+                        <i class="fas fa-user"></i> Inscrivez-vous maintenant
+                    </button>
+                </div>
+            </div>
+            <br /><br /><br />
+
+            <ul class="grid-container-footer liste_options fade-in">
+                <li class="options">
+                    <ul class="option1">
+                        <h1>Liens rapides</h1>
+                        <li><a href="Accueil.php">Accueil</a></li>
+                        <li><a href="Voyages.php">Voyages</a></li>
+                        <li><a href="">Visiter</a></li>
+                        <li><a href="">Se déconnecter</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <ul class="option2">
+                        <h1>A propos</h1>
+                        <li><a href="">Qui sommes-nous ?</a></li>
+                        <li><a href="">Voyages</a></li>
+                        <li><a href="">Visiter</a></li>
+                        <li><a href="">Se déconnecter</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <ul class="option3">
+                        <h1>Contacts</h1>
+                        <li><a href="">(+237) 690 31 16 20</a></li>
+                        <li><a href="">(+237) 699 78 55 02</a></li>
+                        <br />
+                        <li><a href="">metrobus7@gmail.com</a></li>
+                    </ul>
+                </li>
+
+                <div class="div-social" align="center fade-in">
+                    <i class="fas fa-facebook-square zoom-in"></i>
+                    <i class="fas fa-facebook-alt zoom-in"></i>
+                    <i class="fas fa-whatsapp zoom-in"></i>
+                    <i class="fas fa-instagram zoom-in"></i>
+                    <i class="fas fa-twitter zoom-in"></i>
+                    <i class="fas fa-linkedin zoom-in"></i>
+                </div>
+
+            </ul>
+
+            <div class="container-copyright">
+                <p class="copyright fade-in">&copy; 2024 Metrobus. Tous droits réservés</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/gsapcode.js"></script>
+    <script src="assets/js/anim_menu.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

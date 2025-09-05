@@ -1,0 +1,456 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-wrap: wrap;
+}
+
+/* Premier onboarding */
+.containerPresentation {
+    background: linear-gradient(to top, rgba(25, 25, 25, 0.582), rgba(57, 57, 58, 0.541)), url("../images/avenirVoyage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+
+
+.presentationSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .presentationSection {
+        width: 95%;
+    }
+}
+
+/* Responsivité */
+.class-ravi .firstParagraph {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 500px;
+    height: 100%;
+}
+
+.paragraph  .btn-action, .btn-discover{
+    padding: 10px 20px;
+    font-size: 1rem;
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-action {
+    background-color: #d81d6eff; /* Couleur bleu */
+    color: white;
+}
+.btn-discover{
+    background-color: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border: 2px solid #dfdfdf;
+    color: white;
+    margin: 5px;
+}
+
+/* .paragraph input[type="button"]:hover {
+    background-color: #d82d1d;
+} */
+
+
+
+
+.firstParagraph {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(40px, 2vw, 60px);
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/* Les agences du système */
+.agences {
+    background-color: rgb(243, 245, 248);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1.titre-div {
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(10, 101, 150);
+}
+
+.agence-deco {
+    width: 1cm;
+    height: 1cm;
+}
+
+.les_objets {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-evenly;
+}
+
+.les_objets::-webkit-scrollbar {
+    display: none;
+}
+.objet-bus {
+    margin: 10px;
+    width: 330px;
+}
+
+.infos {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 15px #bebebe;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+}
+
+.img-bus {
+    width: inherit;
+    height: 160px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0px 1px 15px #bebebe;
+}
+
+.label-filiale {
+    color: #A7A7A7;
+}
+
+/* Liste des filiales */
+.les-filiales .list_filial {
+    display: flex;
+    overflow-x: auto;
+}
+
+.list_filial::-webkit-scrollbar {
+    display: none;
+}
+
+.filiale {
+    border-radius: 60px;
+    background-color: #f4f4f4;
+    font-weight: 300;
+    padding: 10px;
+    margin-right: 5px;
+    color: #636363;
+}
+
+.description_agence {
+    max-height: 70px;
+    background-image: linear-gradient(to top, #ffffff, #ffffff00);
+    overflow-y: hidden;
+}
+
+.visite {
+    width: 100%;
+    padding: 10px;
+    background-color: #00DCFF;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 15px #bebebe;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.avis {
+    width: 30%;
+    margin-left: auto;
+    float: right;
+    font-size: 2em;
+    font-weight: 200;
+    color: rgb(116, 116, 116);
+}
+
+.img-avis {
+    width: 25px;
+    height: 25px;
+    color: rgb(255, 202, 29);
+}
+.nom-agence {
+    font-family: calibri;
+    color: #707070;
+    font-size: 2em;
+}
+h5 {
+    margin: 5px;
+    font-family: calibri;
+    font-size: 15px;
+}
+.titre {
+    display: inline-flex;
+    width: 100%;
+}
+.infos p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* container moyens de paiement */
+.moyens_paiement {
+    padding: 40px auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.second-parag {
+    font-size: clamp(15px, 2vw, 25px);
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.paymentLabel {
+    font-size: clamp(25px, 2vw, 35px);
+    font-weight: bold;
+    width: auto;
+    color: rgb(84, 85, 87);
+    text-align: center;
+}
+
+/* .sect2 {
+    border: 2px solid hotpink;
+} */
+.sect2 img {
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgb(216, 216, 216);
+    border-radius: 10px;
+    width: 20%;
+}
+
+
+
+/* Recherche de trajet */
+.reservationContainer {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h3.reservationLabel {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+div.reservationSearch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContainer h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+select, input[type="date"] {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+
+
+
+/* section 2 : about us / à propos de nous */
+.containerAboutUs {
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.aboutUs-containt-container{
+    max-width: 100%;
+    padding: 25px;
+}
+.head-aboutUs{
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.head-aboutUs h1{
+    color: #434445;
+}
+.head-aboutUs p{
+    color: #535455;
+}
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+.stat-item {    
+    width: 30%;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #fbfcff;
+}
+.stat-item h2 {
+    font-size: 2rem;
+    color: #1d4ed8; /* Couleur bleu */
+}
+.stat-item p {
+    font-size: 1rem;
+    color: #777;
+}
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #1d4ed8;
+    background-color: transparent; /* Couleur bleu */
+    border: 2px solid #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta-button:hover {
+    background-color: #2563eb; /* Couleur bleu plus foncé */
+    color: #ffffff;
+}
+
+
+
+
+/* container Endroits populaires */
+.containerPopular {
+    text-align: left;
+    padding: 20px;
+    margin: auto;
+    background-color: #F4FAFD;
+    background-image: linear-gradient(to top left, #f4f7fd, #fff9fd);
+}
+.content-container-popular{
+    width: 80%;
+    margin: auto;
+}
+.labelDestinations {
+    margin: 0 auto;
+}
+.containerPopular h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+/* Container destinations */
+.grid-container-destinations {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+}
+.destination-card {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px 20px 0;
+    transition: transform 0.3s;
+}
+.destinations:first-child {
+    margin: 0;
+}
+.destination-card h3 {
+    text-align: left;
+    padding: 0 20px;
+}
+
+
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+.destination-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 30px 30px 0 0;
+}
+.destination-card h3 {
+    font-size: 1.5rem;
+    color: #666667; /* Couleur bleu */
+    margin: 0.5rem 0;
+}
+.star {
+    font-size: 1.5rem;
+    color: gold;
+    background-color: #333333c9;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.destination-card p {
+    font-size: 0.9rem;
+    color: #777;
+    padding: 0 20px;
+}

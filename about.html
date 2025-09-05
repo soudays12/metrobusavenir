@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style ordinaire -->
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/apropos.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/voyage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css" />
+
+    <!-- responsivité des ecrans : PC - TABLETTES - ANDROID -->
+    <link rel="stylesheet" type="text/css" href="assets/css/pc.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tablettes.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/android.css" />
+    <!-- animation javascript -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+
+    <style>
+        #navigation #nav-bar #liste_menu #li-nav1 {
+            border-bottom: 3px solid #ffffff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .navigation .ul-nav li#li-nav1 a {
+            color: #1d4ed8;
+            cursor: pointer;
+        }
+
+        .presentationSection {
+            align-items: center;
+            justify-content: center;
+        }
+
+        a input[type="button"] {
+            margin-left: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 40px;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+                sans-serif;
+            font-size: 25px;
+            border-radius: 5px;
+            border: none;
+            color: rgb(1, 109, 151);
+        }
+
+        a input[type="button"]:hover {
+            cursor: pointer;
+            lighting-color: rgb(241, 241, 241);
+        }
+    </style>
+
+    <title>Metrobus - Accueil</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="tout_header header-container">
+            <h1 class="nom_site header-title fade-in" id="nom_site">
+                AVENIR VOYAGES
+            </h1>
+            <div class="recherche_form search-form fade-in" id="recherche_form">
+                <div class="recherche">
+                    <input class="search_input" id="search_input" type="text" />
+                    <i class="fas fa-search" id="fa-search"></i>
+                </div>
+            </div>
+            <div class="user-activity slide-in">
+                <div class="notif">
+                    <span class="nb-notif">5</span>
+                    <i class="fas fa-bell fa-bell-header"></i>
+                </div>
+                <span>
+                    <i class="fas fa-user fa-user-header"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Section d'accueil -->
+    <div class="containerPresentation">
+        <div id="navigation" class="form_navigation">
+            <div id="nav-bar" class="nav-bar slide-in">
+                <ul id="liste_menu" class="fade-in">
+                    <a href="index.jsp">
+                        <li class="li_nav" id="li-nav1">
+                            <i class="fas fa-home"></i>_Accueil
+                        </li>
+                    </a>
+                    <a href="voyages.jsp">
+                        <li class="li_nav" id="li-nav2">
+                            <i class="fas fa-road"></i>_reservation
+                        </li>
+                    </a>
+                    <a href="destinataire.jsp">
+                        <li class="li_nav" id="li-nav4">
+                            <i class="fas fa-message"></i>_Tchats
+                        </li>
+                    </a>
+                    <a href="apropos.jsp">
+                        <li class="li_nav" id="li-nav5">
+                            <i class="fas fa-about"></i>_Apropos
+                        </li>
+                    </a>
+                    <a href="apropos.jsp">
+                        <li class="li_nav" id="li-nav5">
+                            <i class="fas fa-about"></i>_Contacts
+                        </li>
+                    </a>
+                </ul>
+
+                <div id="user-nav" class="user-nav zoom-in">
+                    <a href="authentification/inscription.jsp">
+                        <input id="inscription" type="button" value="s'inscrire" />
+                    </a>
+                    <a href="login.jsp">
+                        <input id="connexion" type="button" value="se connecter" />
+                    </a>
+                </div>
+            </div>
+
+            <button id="menu" aria-label="toggle curtain navigation" class="menu fade-in">
+                <span class="line_l1"></span>
+                <span class="line_l2"></span>
+                <span class="line_l3"></span>
+            </button>
+        </div>
+        <div class="presentationSection fade-in">
+            <p class="firstParagraph fade-in">À propos</p>
+            <!-- <img class="thumbnail" src="assets/images/bus21.jpg" alt="Image landing page"> -->
+        </div>
+    </div>
+
+    <main>
+        <!-- Section à propos -->
+        <section class="about">
+            <h2>À Propos de Metrobus</h2>
+            <p>
+                Metrobus est une plateforme innovante de transport en commun qui
+                révolutionne la façon dont les gens se déplacent en ville. Avec notre
+                réseau étendu de lignes de bus et notre technologie de pointe, nous
+                offrons une expérience de transport rapide, confortable et écologique.
+            </p>
+            <p>
+                Notre mission est de faciliter les déplacements de nos usagers tout en
+                réduisant l'empreinte environnementale du transport urbain. Nous
+                travaillons sans relâche pour offrir un service fiable et de qualité à
+                nos passagers.
+            </p>
+        </section>
+
+        <!-- Section contact -->
+        <section class="contact">
+            <h2>Contactez-nous</h2>
+            <form>
+                <label for="email">Adresse e-mail :metrobus@gmail.com</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <div class="foot-f1 zoom-in">
+            <div class="avant_pied">
+                <div class="div-avant_pied" align="center">
+                    <br />
+                    <h1 class="h1-pied">
+                        Chez AVENIR VOYAGES, vous etes satisfait ou remboursé
+                    </h1>
+                    <br />
+                    <button class="bout-footer slide-in">
+                        <i class="fas fa-user"></i> Inscrivez-vous maintenant
+                    </button>
+                </div>
+            </div>
+            <br /><br /><br />
+
+            <ul class="grid-container-footer liste_options fade-in">
+                <li class="options">
+                    <ul class="option1">
+                        <h1>Liens rapides</h1>
+                        <li><a href="Accueil.php">Accueil</a></li>
+                        <li><a href="Voyages.php">Voyages</a></li>
+                        <li><a href="">Visiter</a></li>
+                        <li><a href="">Se déconnecter</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <ul class="option2">
+                        <h1>A propos</h1>
+                        <li><a href="">Qui sommes-nous ?</a></li>
+                        <li><a href="">Voyages</a></li>
+                        <li><a href="">Visiter</a></li>
+                        <li><a href="">Se déconnecter</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <ul class="option3">
+                        <h1>Contacts</h1>
+                        <li><a href="">(+237) 690 31 16 20</a></li>
+                        <li><a href="">(+237) 699 78 55 02</a></li>
+                        <br />
+                        <li><a href="">metrobus7@gmail.com</a></li>
+                    </ul>
+                </li>
+
+                <div class="div-social" align="center fade-in">
+                    <i class="fas fa-facebook-square zoom-in"></i>
+                    <i class="fas fa-facebook zoom-in"></i>
+                    <i class="fas fa-whatsapp zoom-in"></i>
+                    <i class="fas fa-instagram zoom-in"></i>
+                    <i class="fas fa-twitter zoom-in"></i>
+                    <i class="fas fa-linkedin zoom-in"></i>
+                </div>
+            </ul>
+
+            <div class="container-copyright">
+                <p class="copyright fade-in">
+                    &copy; 2024 Metrobus. Tous droits réservés
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/anim_menu.js"></script>
+    <script src="assets/js/gsapcode.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

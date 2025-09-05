@@ -1,0 +1,63 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section "À propos" */
+.about {
+    padding: 40px;
+}
+
+.about h2 {
+    color: #0077B6;
+}
+
+/* Section de contact */
+.contact {
+    background-color: #f0f2f5;
+    color: #fff;
+    padding: 40px;
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #fff;
+    color: #0077B6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
